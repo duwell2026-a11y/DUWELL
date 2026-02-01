@@ -9,7 +9,7 @@ import os
 # ==========================================
 # [설정] 팀장님 API 키를 여기에 넣으세요
 # (친구들에게 공유할 땐 이 키를 빼고 입력받게 할 수도 있습니다)
-import streamlit as st  # (혹시 없으면 맨 위에 추가)
+import streamlit as st
 
 # 금고에서 진짜 키 꺼내오기
 DEFAULT_API_KEY = st.secrets["GOOGLE_API_KEY"]
@@ -95,4 +95,5 @@ if uploaded_file is not None:
         if os.path.exists("temp_audio.mp3"):
 
             os.remove("temp_audio.mp3")
+
 
