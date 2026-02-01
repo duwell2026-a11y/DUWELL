@@ -9,7 +9,8 @@ import os
 # ==========================================
 # [설정] 팀장님 API 키를 여기에 넣으세요
 # (친구들에게 공유할 땐 이 키를 빼고 입력받게 할 수도 있습니다)
-DEFAULT_API_KEY = "내_키_여기에_붙여넣기" 
+# 금고(Secrets)에서 꺼내오기
+DEFAULT_API_KEY = st.secrets["GOOGLE_API_KEY"] 
 # ==========================================
 
 # 1. 웹사이트 제목 꾸미기
@@ -90,4 +91,5 @@ if uploaded_file is not None:
         
         # 청소
         if os.path.exists("temp_audio.mp3"):
+
             os.remove("temp_audio.mp3")
