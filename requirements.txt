@@ -1,3 +1,5 @@
 streamlit
 google-generativeai
 ics
+google-api-python-client  <-- 이거 추가
+google-auth               <-- 이거 추가
